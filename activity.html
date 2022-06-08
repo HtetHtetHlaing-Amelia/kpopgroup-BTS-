@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+	<head>
+		<title>Activity</title>
+		<style>
+
+		body{
+			background-color:#dce0d3;
+		}
+		h1{
+			text-align: center;
+		
+		}
+			.info{
+				font-size: 16px;
+		       font-style: italic;
+		       line-height: 1.8;
+
+			}
+
+			.gallery {
+    		margin: 5px;
+    		border: 1px solid #ccc;
+    		float: left;
+   			 width:510px;
+			}
+.gallery:hover {
+  border: 1px solid purple;
+}
+
+.gallery img {
+  width: 98%;
+  height: 320px;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+		</style>
+	</head>
+	
+	<body>
+		<h1>Activity of BTS</h1>
+	<div class="gallery">
+  <a target="_blank" href="image5.jpg">
+    <img src="image2.jpg" alt="image5" width="600px" height="400px">
+  </a>
+  
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image8.jpg">
+    <img src="image8.jpg" alt="image8" width="600px" height="400px">
+  </a>
+  
+</div>
+<br>
+<div class="info">
+			
+ <br>
+ <br>Activity is the BTS unit of execution. It holds the environment for an instance of the BTS equivalent of program execution. A process consists of a collection of one or more activities, and is the biggest entity recognized by BTS.<br>
+
+The state of a BTS activity is stored on disk and reinstantiated in memory as required. Typically, it represents one of the actions of a business transaction.<br>
+
+Activities can be hierarchically organized, in a tree structure that may be several layers deep. The activity at the top of the hierarchy is called the root activity . An activity that starts another activity is known as a parent activity . An activity that is started by another is known as a child activity . For example, if activity A starts activity B, B is a child of A; A is the parent of B. Notice that—with the exception of the root activity, which has no parent—an activity can be both a parent and a child.<br>
+
+A process is the biggest entity recognized by BTS. It consists of a collection of one or more activities. It always contains a root activity. When a process is run, the program that implements its root activity receives control. Typically, a process is an instance of a business transaction.<br>
+
+Processes can be categorized, using the PROCESSTYPE option of the DEFINE PROCESS command. All the activities in a process inherit the same PROCESSTYPE attribute. Categorizing processes makes it easier to find a particular process—the BTS browsing commands allow filtering by process-type.<br>
+
+Names and identifiers
+You can use a program to define a process. The program gives the process a name, known as its process name , which is used to reference the process from outside the BTS system.<br>
+<b>Activation sequences</b><br>
+To complete all its work, an activity might need to run as a sequence of separate processing steps, or activations . For example, a parent activity typically needs to run for a while, stop temporarily, and then continue execution when one of its children has completed.<br>
+Synchronous and asynchronous activations
+You can cause an activity or process to be activated in one of two ways, synchronously or asynchronously.
+Lifetime of activities<br>
+A child activity is created when its parent issues a DEFINE ACTIVITY command. It is deleted automatically by CICS, either when its parent completes or if the parent issues a DELETE ACTIVITY command against it.
+Processing modes<br>
+Processing states or modes for activities can be active, canceling, complete, dormant, or initial. These modes describe the current state of an activity.<br>
+User sync points<br>
+These programs might issue user sync points: a top-level transaction that defines and runs a BTS process, a program that runs as the activation of a child activity, or a program executing outside the BTS environment that acquires a process or activity with an ACQUIRE command.<br>
+		</div>
+	</body>
+</html>
