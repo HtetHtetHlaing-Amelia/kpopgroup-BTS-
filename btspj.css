@@ -10,53 +10,53 @@
 
 @keyframes slide{
 	10%{
-		background: url("image1.jpg");
+		background: url("image1.JPG");
 		background-repeat: no-repeat;
 		background-size:100%;
 	}
 	20%{
-		background: url("image2.jpg");
+		background: url("image2.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	30%{
-		background: url("image3.jpg");
+		background: url("image3.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	40%{
-		background: url("image4.jpg");
+		background: url("image4.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 
 	50%{
-		background: url("image5.jpg");
+		background: url("image5.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	60%{
-		background: url("image6.jpg");
+		background: url("image6.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	70%{
-		background: url("image7.jpg");
+		background: url("image7.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	80%{
-		background: url("image8.jpg");
+		background: url("image8.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	90%{
-		background: url("image6.jpg");
+		background: url("image6.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
 	100%{
-		background: url("image5.jpg");
+		background: url("image5.JPG");
 		background-size:100%;
 		background-repeat: no-repeat;
 	}
